@@ -1,0 +1,47 @@
+name: chatbox_ui
+description: "A flutter project ui named as chatbox."
+publish_to: "none"
+version: 1.0.0+1
+environment:
+  sdk: ^3.5.3
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.14
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Circular
+      fonts:
+        - asset: assets/fonts/Circular/Regular.ttf
+        - asset: assets/fonts/Circular/Medium.ttf
+        - asset: assets/fonts/Circular/Light.ttf
+    - family: Caros
+      fonts:
+        - asset: assets/fonts/Caros/Regular.otf
+          weight: 400
+        - asset: assets/fonts/Caros/Light.otf
+          weight: 200
+        - asset: assets/fonts/Caros/Medium.otf
+          weight: 600
+        - asset: assets/fonts/Caros/Bold.otf
+          weight: 700
+        - asset: assets/fonts/Caros/Thin.otf
+          weight: 100
