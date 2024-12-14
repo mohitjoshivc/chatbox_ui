@@ -1,3 +1,4 @@
+import 'package:chatbox_ui/widgets/social_media_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -98,50 +99,12 @@ class LandingPage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Container(
-                          width: 48,
-                          height: 48,
-                          padding: EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: Color(0xFFA8B0AF),
-                              width: 2.0,
-                            ),
-                          ),
-                          child: SvgPicture.asset(
-                              'assets/images/facebook_logo.svg'),
-                        ),
+                        SocialMediaButton(assetName: 'google_logo.svg'),
                         SizedBox(width: 30),
-                        Container(
-                          width: 48,
-                          height: 48,
-                          padding: EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: Color(0xFFA8B0AF),
-                              width: 2.0,
-                            ),
-                          ),
-                          child:
-                              SvgPicture.asset('assets/images/google_logo.svg'),
-                        ),
+                        SocialMediaButton(assetName: 'facebook_logo.svg'),
                         SizedBox(width: 30),
-                        Container(
-                          width: 48,
-                          height: 48,
-                          padding: EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: Color(0xFFA8B0AF),
-                              width: 2.0,
-                            ),
-                          ),
-                          child:
-                              SvgPicture.asset('assets/images/apple_logo.svg'),
-                        ),
+                        SocialMediaButton(assetName: 'apple_logo.svg'),
+                        SizedBox(width: 30),
                       ],
                     ),
                     SizedBox(height: screenHeight * 0.03),
@@ -175,12 +138,10 @@ class LandingPage extends StatelessWidget {
                     ),
                     SizedBox(height: screenHeight * 0.03),
                     ElevatedButton(
-                      style: ButtonStyle(
-                          minimumSize: WidgetStatePropertyAll(
-                            Size.fromHeight(48),
-                          ),
-                          backgroundColor:
-                              WidgetStatePropertyAll(Colors.white)),
+                      style: ElevatedButton.styleFrom(
+                          elevation: 2,
+                          minimumSize: Size.fromHeight(48),
+                          backgroundColor: Colors.white),
                       onPressed: () {},
                       child: Text(
                         "Sign up with mail",

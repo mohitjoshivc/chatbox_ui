@@ -1,4 +1,5 @@
-import 'package:chatbox_ui/pages/landing_page.dart';
+import 'package:chatbox_ui/pages/login_page.dart';
+import 'package:chatbox_ui/pages/signup_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,26 +14,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Chatbox',
+      home: SignupPage(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Caros',
         elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ButtonStyle(
-            textStyle: WidgetStatePropertyAll(
-              TextStyle(
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Caros',
-              ),
+          style: ElevatedButton.styleFrom(
+            elevation: 0,
+            textStyle: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Caros',
             ),
-            shape: WidgetStatePropertyAll(
-              RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
-              ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
             ),
           ),
         ),
       ),
-      home: LandingPage(),
     );
   }
 }
