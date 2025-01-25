@@ -36,18 +36,18 @@ class MyApp extends StatelessWidget {
 
 final List<Map<String, dynamic>> stories = [
   {
-    'imageUrl': 'assets/images/man-pic-2.png',
+    'imageUrl': 'assets/images/png/man-pic.png',
     'name': 'My status',
     'hasAdd': true
   },
-  {'imageUrl': 'assets/images/man-pic-2.png', 'name': 'Adil'},
-  {'imageUrl': 'assets/images/man-pic-2.png', 'name': 'Marina'},
-  {'imageUrl': 'assets/images/man-pic-2.png', 'name': 'Dean'},
-  {'imageUrl': 'assets/images/man-pic-2.png', 'name': 'Max'},
-  {'imageUrl': 'assets/images/man-pic-2.png', 'name': 'Max 2'},
-  {'imageUrl': 'assets/images/man-pic-2.png', 'name': 'Max 3'},
-  {'imageUrl': 'assets/images/man-pic-2.png', 'name': 'Max 4'},
-  {'imageUrl': 'assets/images/man-pic-2.png', 'name': 'Max 5'},
+  {'imageUrl': 'assets/images/png/man-pic.png', 'name': 'Adil'},
+  {'imageUrl': 'assets/images/png/man-pic.png', 'name': 'Marina'},
+  {'imageUrl': 'assets/images/png/man-pic.png', 'name': 'Dean'},
+  {'imageUrl': 'assets/images/png/man-pic.png', 'name': 'Max'},
+  {'imageUrl': 'assets/images/png/man-pic.png', 'name': 'Max 2'},
+  {'imageUrl': 'assets/images/png/man-pic.png', 'name': 'Max 3'},
+  {'imageUrl': 'assets/images/png/man-pic.png', 'name': 'Max 4'},
+  {'imageUrl': 'assets/images/png/man-pic.png', 'name': 'Max 5'},
 ];
 
 class WrapperApp extends StatefulWidget {
@@ -87,7 +87,7 @@ class _WrapperAppState extends State<WrapperApp> {
             ),
           ),
           child: SvgPicture.asset(
-            'assets/images/search.svg',
+            'assets/images/svg/icons/search.svg',
             width: 22,
             height: 22,
           ),
@@ -98,7 +98,7 @@ class _WrapperAppState extends State<WrapperApp> {
             height: 44,
             margin: const EdgeInsets.only(right: 20),
             child: Image.asset(
-              'assets/images/man-pic.png',
+              'assets/images/png/man-pic.png',
               width: 44,
               height: 44,
             ),
@@ -167,28 +167,30 @@ class _WrapperAppState extends State<WrapperApp> {
                 BottomNavigationBarItem(
                   icon: Padding(
                     padding: const EdgeInsets.only(bottom: 4.0),
-                    child: SvgPicture.asset('assets/images/message.svg'),
+                    child:
+                        SvgPicture.asset('assets/images/svg/tabs/message.svg'),
                   ),
                   label: 'Messages',
                 ),
                 BottomNavigationBarItem(
                   icon: Padding(
                     padding: const EdgeInsets.only(bottom: 4.0),
-                    child: SvgPicture.asset('assets/images/call.svg'),
+                    child: SvgPicture.asset('assets/images/svg/tabs/call.svg'),
                   ),
                   label: 'Calls',
                 ),
                 BottomNavigationBarItem(
                   icon: Padding(
                     padding: const EdgeInsets.only(bottom: 4.0),
-                    child: SvgPicture.asset('assets/images/user.svg'),
+                    child: SvgPicture.asset('assets/images/svg/tabs/user.svg'),
                   ),
                   label: 'User',
                 ),
                 BottomNavigationBarItem(
                   icon: Padding(
                     padding: const EdgeInsets.only(bottom: 4.0),
-                    child: SvgPicture.asset('assets/images/settings.svg'),
+                    child:
+                        SvgPicture.asset('assets/images/svg/tabs/settings.svg'),
                   ),
                   label: 'Settings',
                 ),

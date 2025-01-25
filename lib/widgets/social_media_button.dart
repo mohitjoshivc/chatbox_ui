@@ -18,7 +18,7 @@ class SocialMediaButton extends StatelessWidget {
           width: 2.0,
         ),
       ),
-      child: SvgPicture.asset('assets/images/$assetName'),
+      child: SvgPicture.asset('assets/images/svg/social/$assetName'),
     );
   }
 }
